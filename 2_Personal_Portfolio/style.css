@@ -1,0 +1,24 @@
+/* Style for the header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Style for the right-aligned navigation */
+.right-nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.right-nav li {
+  margin-left: 1rem;
+}
+
+.right-nav a {
+  text-decoration: none;
+  color: #333;
+}
