@@ -24,23 +24,57 @@
       }
       .title {
         color: #2f9e44;
+        margin-bottom: 10px;
+        font-size: 15px;
+        font-family: "Courier New", Courier, monospace;
+      }
+      .section {
+        margin-bottom: 20px;
+      }
+      .sub-title {
+        font-size: 20px;
+        color: #1d57eb;
       }
     </style>
   </head>
   <body style="margin: 100px; font-family: 'Times New Roman', Times, serif">
-    <div style="margin-bottom: 70px"></div>
-    <hr class="hr" />
-    <h1>Choi Lam Chun</h1>
-    <div class="title">Junior Full Stack Developer</div>
-    <br />
-    <div class="contact-info">
-      <div>Phone: 852-9518-4896</div>
-      <div>Email: choilamchun2003@gmail.com</div>
-      <div>
-        Github:
-        <a href="https://github.com/Astonchoi">https://github.com/Astonchoi</a>
-      </div>
-    </div>
-    <div
+    <header>
+      <div style="margin-bottom: 70px"></div>
+      <hr class="hr" />
+      <h1>Choi Lam Chun</h1>
+      <div class="title">Junior Full Stack Developer</div>
+    </header>
+    <main>
+      <section class="contact-info section">
+        <div>Phone: 852-9518-4896</div>
+        <div>Email: choilamchun2003@gmail.com</div>
+        <div>
+          Github:
+          <a href="https://github.com/Astonchoi"
+            >https://github.com/Astonchoi</a
+          >
+        </div>
+      </section>
+
+      <section class="skills section">
+        <div class="title">Skills</div>
+        <div>HTML, CSS, JavaScript, php, python, java, docker, Git</div>
+      </section>
+
+      <section class="education section">
+        <div class="title">Education</div>
+        <div>
+          <div class="sub-title">School</div>
+          <div>City University of Hong Kong</div>
+          <div>Bachelor of Information Engineering</div>
+        </div>
+      </section>
+
+      <section class="experience section">
+        <div class="title">Experience</div>
+        <div class="sub-title">Company Name, Position - Job Title</div>
+        <div>Job Description</div>
+      </section>
+    </main>
   </body>
 </html>
