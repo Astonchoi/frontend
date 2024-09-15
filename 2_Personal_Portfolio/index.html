@@ -16,17 +16,47 @@
       <!-- name -->
       <div>Choi Lam Chun</div>
       <!-- nav -->
-      <nav>
+      <nav class="right-nav">
         <ul>
-          <li>Home</li>
-          <li>Projects</li>
-          <li>Articles</li>
-          <li>Contact</li>
+          <li><a href="#home">Home</a></li>
+          <li>/</li>
+          <li><a href="#projects">Projects</a></li>
+          <li>/</li>
+          <li><a href="#articles">Articles</a></li>
+          <li>/</li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main></main>
     <footer></footer>
+
+    <style>
+      /* Style for the header */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+      }
+
+      /* Style for the right-aligned navigation */
+      .right-nav ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .right-nav li {
+        margin-left: 1rem;
+      }
+
+      .right-nav a {
+        text-decoration: none;
+        color: #333;
+      }
+    </style>
   </body>
 </html>
