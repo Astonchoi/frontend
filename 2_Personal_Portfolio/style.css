@@ -22,3 +22,76 @@ header {
   text-decoration: none;
   color: #333;
 }
+
+#title-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 50vh;
+  border-bottom: 5px groove black;
+}
+
+.center-text-title {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.5rem; /* Add some space between title and subtitle */
+}
+
+.center-text-subtitle {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1rem;
+  text-align: center;
+  color: #333;
+}
+
+#content-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000000;
+}
+
+.content-title {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.subcontent-container {
+  padding: 20px;
+}
+
+.project-item {
+  list-style-type: none;
+  padding: 0;
+}
+
+.project-name {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.project-name:not(:last-child) {
+  margin-bottom: 1px; /* Space for the horizontal line */
+}
+
+.project-name:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: -1px; /* Position it just below the content */
+  left: -20px; /* Adjust this value to match your container's padding */
+  right: -20px; /* Adjust this value to match your container's padding */
+  height: 1px;
+  border-bottom: 1px solid #000000;
+}
