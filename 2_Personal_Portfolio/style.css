@@ -65,6 +65,17 @@ header {
   font-family: "Libre Baskerville", serif;
   font-weight: 700;
   font-size: 1rem;
+  padding-bottom: 10px;
+}
+
+.highlight-text {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.work-experience .highlight-text {
+  margin-top: 15px;
 }
 
 .subcontent-container {
@@ -72,18 +83,22 @@ header {
 }
 
 .project-item {
+  margin-top: 0px;
   list-style-type: none;
   padding: 0;
 }
 
 .project-name {
   position: relative;
-  padding-top: 10px;
   padding-bottom: 10px;
 }
 
 .project-name:not(:last-child) {
   margin-bottom: 1px; /* Space for the horizontal line */
+}
+
+.project-name:not(:first-child) {
+  margin-top: 10px;
 }
 
 .project-name:not(:last-child)::after {
@@ -94,4 +109,23 @@ header {
   right: -20px; /* Adjust this value to match your container's padding */
   height: 1px;
   border-bottom: 1px solid #000000;
+}
+.education p {
+  margin-top: 0px;
+}
+.education ul {
+  padding-left: 10px;
+}
+
+.education li {
+  list-style-type: "- ";
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 200;
+  font-size: 0.8rem;
+  margin-top: 20%;
 }
